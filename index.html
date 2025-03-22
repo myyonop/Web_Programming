@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0312</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_index.css">
 </head>
 <body>
     <nav class="navbar">
@@ -22,14 +22,12 @@
     <!-- 메인 섹션 -->
     <section class="main">
         <div class="container">
-            <h1>웹 프로그래밍, Web Programming</h1>
-            <h2>정보보호학전공 92410926 조은수</h2>
-            
-            <h2>
+            <h1>Web Programming</h1>
+            <p class="menual">
                 웹 개발자를 위한 온라인 메뉴얼: <a href="https://www.w3schools.com/">w3schools</a>
-            </h2>
+            </p>
         
-            <p>
+            <p class="three_point">
                 웹프로그래밍의 3가지 요소: 
                 <a href="https://www.w3schools.com/html/">HTML5</a> |
                 <a href="https://www.w3schools.com/css/default.asp">CSS3</a> | 
@@ -42,28 +40,31 @@
         
             <hr> 
         
-            <p>
+            <div class="contect">
                 배경색 바꾸기: 
                 <button onclick="pink()">Pink</button> 
                 <button onclick="lightblue()">LightBlue</button>
                 <button onclick="lightyellow()">LightYellow</button> 
                 <button onclick="reset()">Reset</button>
-            </p>
+            </div>
         
             <p>
                 배워봅시다 :
-                <button onmouseover="show_html()" onmouseout="hide()">HTML5</button>
-                <button onmouseover="show_css()" onmouseout="hide()">CSS3</button>
-                <button onmouseover="show_js()" onmouseout="hide()">JavaScript</button>
+                <button onmouseover="showContent('html')" onmouseout="hide()">HTML5</button>
+                <button onmouseover="showContent('css')" onmouseout="hide()">CSS3</button>
+                <button onmouseover="showContent('js')" onmouseout="hide()">JavaScript</button>
             </p>
             
             <hr>
-        
-            <div>
-                <img id="fig" height="200px">
+
+            
+            <div id="desc-container">
+                <img id="fig" src="" alt="Image">
                 <p id="desc"></p>
             </div>
         </div>
+        <!-- 하반부 그라데이션 -->
+        <div id="gradientSection" class="gradient"></div>
     </section>
     
 
