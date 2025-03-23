@@ -76,74 +76,47 @@ h1 {
     margin-bottom: 10px;
 }
 
-.menual {
-    font-size: x-large;
+.container{
+    width: auto;
+    margin: auto;
+}
+
+ul{
+    list-style-type: none;
+    margin: 10px;
+}
+
+li{
+    margin: 10px;
+}
+
+.title{
     font-weight: bold;
+    width: 80px;
+    float: left;
+}
+
+fieldset{
+    margin: 15px 10px;
+}
+
+legend{
+    font-weight: bold;
+    color: rgb(69, 76, 136);
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.centered{
+    text-align: center;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 a:hover {
-    color: #444;
+    color: #aaa;
 }
-
-.three_point {
-    margin: 5px 0;
-}
-
-hr {
-    margin: 10px 0;
-}
-
-button {
-    background-color: lightgray;
-    border: none;
-    padding: 5px 10px;
-    margin: 5px;
-    font-size: large;
-    font-weight: bold;
-    border-width: 0;
-    border-radius: 10px;
-}
-
-/* 그라데이션 */
-.content {
-    flex: 1;
-    /* 상단 내용 영역 */
-    text-align: center;
-    padding: 20px;
-}
-
-.gradient {
-    height: 50%; /* 페이지의 하반부 */
-    position: absolute;
-    bottom: 0;
-    margin-left: 0;
-    width: 100%;
-    opacity: 0; /* 처음에는 보이지 않음 */
-    transition: opacity 1s; /* 서서히 보이게 하는 애니메이션 */
-}
-
-/* JS코드 */
-#time {
-    font-weight: bold;
-}
-
-#desc-container {
-    background-color: white;
-    border-radius: 20px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-#fig {
-    height: 200px;
-    display: block;
-    margin: 0 auto;
-
-}
-
